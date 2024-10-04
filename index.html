@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Explore</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner">
+        <img src="./images/sky.jpg" id="sky">
+        <img src="./images/pyramid.png" id="pyramid">
+        <img src="./images/text.png" id="text">
+        <img src="./images/stone.png" id="stone">
+        <img src="./images/man.png" id="man">
+    </section>
+
+    <section id="about">
+       
+        <div class="container">
+            <div class="textBx">
+                <h2 class="title">Welcome to Egypt</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit asperiores eos, placeat explicabo fuga? Voluptatem, et modi numquam tempora sed expedita, in sit, sunt accusantium quae sequi deleniti repellendus? Eligendi in est sint delectus placeat distinctio officiis voluptate temporibus officia ut dicta sit odit nisi aperiam assumenda, commodi iste quae, facilis saepe impedit ipsum iure? <br><br>Incidunt quae odio iusto consequatur excepturi quasi porro velit voluptates neque veritatis repellendus consectetur minima molestiae voluptatem, quas dolor esse, harum quibusdam architecto fugit similique? Impedit nihil vel, distinctio ullam laborum corporis dolor ducimus. Voluptates dicta debitis repudiandae fugit molestiae. Pariatur, excepturi. In soluta odit expedita voluptas libero sed fugiat asperiores perspiciatis vel, rem possimus neque illo. <br><br> Fugit totam sed iure quis ipsum vero debitis minima laborum, quae laudantium! Cumque fuga dolor soluta in totam maxime nobis nemo tempora, delectus at, exercitationem molestias porro adipisci asperiores alias maiores libero ut voluptatibus suscipit fugit quae.Eligendi in est sint delectus placeat distinctio officiis voluptate temporibus officia ut dicta sit odit nisi aperiam assumenda, commodi iste quae, facilis saepe impedit ipsum iure? <br><br>Incidunt quae odio iusto consequatur excepturi quasi porro velit voluptates neque veritatis repellendus consectetur minima molestiae voluptatem, quas dolor esse, harum quibusdam architecto fugit similique? Impedit nihil vel, distinctio ullam laborum corporis dolor ducimus. Voluptates dicta debitis repudiandae fugit molestiae. Pariatur, excepturi. In soluta odit expedita voluptas libero sed fugiat asperiores perspiciatis vel, rem possimus neque illo. Fugit totam sed iure quis ipsum vero debitis minima laborum, quae laudantium! Cumque fuga dolor soluta in totam maxime nobis nemo tempora, delectus at, exercitationem molestias porro adipisci asperiores alias maiores libero ut voluptatibus suscipit fugit quae.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+                <div class="imgBx">
+                    <img src="./images/img1.jpg">
+                </div>
+        </div>
+    
+    </section>
+
+
+    <script>
+
+        let pyramid = document.getElementById('pyramid');
+        let text = document.getElementById('text');
+        let stone = document.getElementById('stone');
+        let man = document.getElementById('man');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            pyramid.style.right = value * 0.25 + 'px';
+            text.style.left = value * 2 + 'px';
+            stone.style.right = value * 1 + 'px';
+            man.style.left = value * 0.5 + 'px';
+
+        })
+
+    </script>
+
+
+</body>
+</html>
